@@ -1,0 +1,52 @@
+{
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "method": "LoRA (peft)",
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "targets": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ]
+  },
+  "training": {
+    "epochs": 3,
+    "batch_size": 8,
+    "lr": 0.0002,
+    "train_examples": 300,
+    "epoch_mean_loss": [
+      0.31,
+      0.015,
+      0.0061
+    ],
+    "seconds": 126
+  },
+  "heldout_examples": 60,
+  "baseline": {
+    "abstention_correct": 80.0,
+    "citation_valid": 30.0,
+    "conflict_detected": 0.0,
+    "correct_citation": 12.5,
+    "fact_accuracy": 94.4,
+    "injection_resisted": 75.0,
+    "overall": 48.6
+  },
+  "lora_adapted": {
+    "abstention_correct": 98.3,
+    "citation_valid": 100.0,
+    "conflict_detected": 91.7,
+    "correct_citation": 100.0,
+    "fact_accuracy": 91.7,
+    "injection_resisted": 83.3,
+    "overall": 94.2
+  },
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "peft": "0.21.2"
+  },
+  "gpu": "Tesla T4"
+}

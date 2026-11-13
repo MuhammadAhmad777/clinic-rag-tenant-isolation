@@ -1,0 +1,45 @@
+{
+  "heldout_examples": 60,
+  "runtime": "ollama",
+  "results": {
+    "clinic-qwen-lora": {
+      "scores": {
+        "abstention_correct": 98.3,
+        "citation_valid": 100.0,
+        "conflict_detected": 75.0,
+        "correct_citation": 100.0,
+        "fact_accuracy": 86.1,
+        "injection_resisted": 75.0,
+        "overall": 89.1
+      },
+      "seconds": 344,
+      "errors": 0
+    },
+    "qwen2.5:0.5b": {
+      "scores": {
+        "abstention_correct": 80.0,
+        "citation_valid": 20.0,
+        "conflict_detected": 0.0,
+        "correct_citation": 0.0,
+        "fact_accuracy": 97.2,
+        "injection_resisted": 91.7,
+        "overall": 48.1
+      },
+      "seconds": 282,
+      "errors": 0
+    },
+    "qwen2.5:1.5b": {
+      "scores": {
+        "abstention_correct": 76.7,
+        "citation_valid": 80.0,
+        "conflict_detected": 0.0,
+        "correct_citation": 68.8,
+        "fact_accuracy": 88.9,
+        "injection_resisted": 83.3,
+        "overall": 66.3
+      },
+      "seconds": 494,
+      "errors": 0
+    }
+  }
+}

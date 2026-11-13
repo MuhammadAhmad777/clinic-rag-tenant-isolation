@@ -1,0 +1,7 @@
+{
+  "_note": "SYNTHETIC demo tenants and keys. Not real credentials.",
+  "tenants": {
+    "clinic-alder": {"display_name": "Alder Family Clinic", "api_key": "demo-key-alder-0001"},
+    "clinic-birch": {"display_name": "Birch Street Medical", "api_key": "demo-key-birch-0002"}
+  }
+}
